@@ -1,2 +1,2 @@
 # Kotlin
-Kotlin Codes
+Repositório com projetos desenvolvidos em Kotlin.
