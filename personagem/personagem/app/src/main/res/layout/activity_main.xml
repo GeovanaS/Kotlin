@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#68A8DE"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/FotoKyle"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:layout_margin="10pt"
+        android:contentDescription="Kyle Broflovski"
+        android:rotationX="4"
+        app:srcCompat="@drawable/kylebroflovski" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Kyle Broflovski"
+        android:textColor="#6D31D5"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/descr_personagem"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10pt"
+        android:gravity="center"
+        android:text="Kyle Broflovski é um personagem do desenho animado South Park. Ele é um menino de 10 anos que mora na cidade de South Park, Colorado, onde costuma ser visto com seus amigos, Eric Cartman, Stan Marsh e Kenny McCormick. Ele é um jovem fundamentalista conhecido por fazer parte da única família judia em South Park e é o contraste intelectual do sem princípios Eric Cartman. Como tal, ele é um dos dois arquirrivais de Cartman, ao lado de Stan Marsh, que é considerado seu melhor amigo. Ele costuma ser a voz da razão, embora muitos outros personagens desempenhem esse papel com a mesma frequência, senão mais do que ele, como Stan, Wendy e Chef."
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>

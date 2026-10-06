@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgfilme"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:layout_marginTop="10pt"
+        app:srcCompat="@drawable/filme" />
+
+    <TextView
+        android:id="@+id/top_filmes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:text="TOP 5 DE FILMES"
+        android:textAlignment="center"
+        android:textColor="#CA1A1A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/categorias"
+        android:layout_width="288dp"
+        android:layout_height="48dp"
+        android:layout_margin="15pt"
+        android:layout_marginRight="45pt"
+        android:entries="@array/categorias" />
+
+    <Button
+        android:id="@+id/indicar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="39pt"
+        android:backgroundTint="#CE1616"
+        android:text="INDICAR" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:text="Resultados"
+        android:textAlignment="center"
+        android:textColor="#EB1212"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

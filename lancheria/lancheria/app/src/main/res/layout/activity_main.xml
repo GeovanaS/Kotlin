@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Titulo do combo"
+        android:text="Monte seu combo"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelTitulo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Titulo do combo"
+        android:text="Escolha os itens abaixo"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        app:srcCompat="@drawable/images" />
+
+    <CheckBox
+        android:id="@+id/checkHamburguer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F44336"
+        android:text="Hambúrguer - R$ 12,00" />
+
+    <CheckBox
+        android:id="@+id/checkBatata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F44336"
+        android:text="Batata Frita - R$ 8,00" />
+
+    <CheckBox
+        android:id="@+id/checkRefrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F44336"
+        android:text="Refrigerante - R$ 6,00" />
+
+    <CheckBox
+        android:id="@+id/checkSobremesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="#F44336"
+        android:text="Sobremesa - R$ 10,00" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Calcular Total"
+        android:textColor="#F43649"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Total do pedido"
+        android:text="Total: R$ 0,00"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textStyle="bold" />
+
+</LinearLayout>

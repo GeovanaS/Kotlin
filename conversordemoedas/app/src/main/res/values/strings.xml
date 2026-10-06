@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">conversordemoedas</string>
+
+    <string-array name="moeda">
+        <item>Dolar</item>
+        <item>Pesos</item>
+        <item>Euro</item>
+    </string-array>
+
+</resources>

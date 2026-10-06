@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">filmes</string>
+    <string-array name="categorias">
+        <item>Comedia</item>
+        <item>Terror</item>
+        <item>Suspense</item>
+        <item>Ação</item>
+    </string-array>
+</resources>

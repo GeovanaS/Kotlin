@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="Compras"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="179dp"
+            android:layout_height="222dp"
+            app:srcCompat="@drawable/compra" />
+
+        <TextView
+            android:id="@+id/labelEscolha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15pt"
+            android:text="Escolha seu(s) produto(s)"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#17638F"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkMouse"
+            android:layout_width="245dp"
+            android:layout_height="53dp"
+            android:layout_margin="2pt"
+            android:text="Mouse sem Fio - R$ 31,90"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdMouse"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qtd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkTeclado"
+            android:layout_width="249dp"
+            android:layout_height="53dp"
+            android:layout_margin="2pt"
+            android:text="Teclado USB - R$ 29,90"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdTeclado"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qtd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkMonitor"
+            android:layout_width="254dp"
+            android:layout_height="48dp"
+            android:layout_margin="2pt"
+            android:buttonTint="#0D669A"
+            android:text="Monitor 19&quot; - R$ 560,90"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdMonitor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qtd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkCaixa"
+            android:layout_width="256dp"
+            android:layout_height="53dp"
+            android:layout_margin="2pt"
+            android:text="Caixa de Som JBL - R$ 139,90"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdCaixa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qtd" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkApresentador"
+            android:layout_width="260dp"
+            android:layout_height="53dp"
+            android:layout_margin="2pt"
+            android:text="Apresentador Multimídia - R$ 50,86"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdApresentador"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qtd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkProjetor"
+            android:layout_width="256dp"
+            android:layout_height="53dp"
+            android:layout_margin="2pt"
+            android:buttonTint="#0D669A"
+            android:text="Projetor - R$ 3400,00"
+            android:textColor="#0D669A"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/qtdProjetor"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Qdt" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25pt"
+        android:layout_marginRight="25pt"
+        android:text="TOTAL"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labelTotal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="2pt"
+        android:layout_marginBottom="5pt"
+        android:text="Total de Compras"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#17638F"
+        android:textSize="20sp" />
+
+</LinearLayout>

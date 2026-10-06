@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#4CAF50"
+    android:contentDescription="Nome"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_margin="2pt"
+        android:backgroundTint="#E91E63"
+        android:ems="10"
+        android:hint="Digite seu nome completo"
+        android:inputType="text"
+        android:textColorHint="#E91E63" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:contentDescription="Sexo"
+        android:text="Sexo:"
+        android:textColor="#D11D1D"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMasc"
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:text="Masculino"
+            android:textColor="#E91E63"
+            app:buttonTint="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            app:buttonTint="#E91E63"
+            android:textColor="#E91E63"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvEstadoCivil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:contentDescription="Estado Civil"
+        android:text="Estado Civil:"
+        android:textColor="#E91E63"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgEstadoCivil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbSolteiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Solteiro"
+            app:buttonTint="#E91E63"
+            android:textColor="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/rbCasado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Casado"
+            app:buttonTint="#E91E63"
+            android:textColor="#E91E63" />
+
+        <RadioButton
+            android:id="@+id/rbDivorciado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Divorciado"
+            app:buttonTint="#E91E63"
+            android:textColor="#E91E63" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvAtividades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:contentDescription="Atividades"
+        android:text="Atividades Fisicas Realizadas"
+        android:textColor="#E91E63"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/cbCaminhada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caminhada"
+        app:buttonTint="#E91E63"
+        android:textColor="#E91E63" />
+
+    <CheckBox
+        android:id="@+id/cbNatacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Natação"
+        app:buttonTint="#E91E63"
+        android:textColor="#E91E63" />
+
+    <CheckBox
+        android:id="@+id/cbEsporteIndividual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esporte Individual"
+        app:buttonTint="#E91E63"
+        android:textColor="#E91E63" />
+
+    <CheckBox
+        android:id="@+id/cbEsporteColetivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esporte Coletivo"
+        app:buttonTint="#E91E63"
+        android:textColor="#E91E63" />
+
+    <Button
+        android:id="@+id/btnResumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3pt"
+        android:text="Resumo" />
+
+    <EditText
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2pt"
+        android:backgroundTint="#E91E63"
+        android:contentDescription="Resultado"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="Resultado aqui:"
+        android:textColor="#E91E63" />
+
+</LinearLayout>
